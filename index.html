@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <!-- loading screen -->
+    <div class="loadingScreen position-fixed top-0 start-0 bottom-0 end-0 bg-black justify-content-center align-items-center">
+      <i class="fas fa-spinner fa-spin fa-6x"></i>
+    </div>
+    <!-- loading screen -->
+
+    <!-- side nav -->
+    <div class="sideNav position-fixed d-flex vh-100 top-0 bottom-0 ">
+      <div
+        class="navTab p-2 d-flex flex-column justify-content-between p-4 vh-100"
+      >
+        <div class="navLinks">
+          <ul class="list-unstyled overflow-hidden">
+            <li onclick=" searchInput();closeSideNav()" class="py-2 position-relative">
+              Search
+            </li>
+            <li onclick="getCategories();closeSideNav()" class="py-2 position-relative">
+              Categories
+            </li>
+            <li onclick="getAreas();closeSideNav()" class="py-2 position-relative">Areas</li>
+            <li onclick="getIngredients();closeSideNav()" class="py-2 position-relative">
+              Ingredients
+            </li>
+            <li onclick="showContacts();closeSideNav()" class="py-2 position-relative">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="navFooter text-secondary">
+          <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter ms-1"></i>
+            <i class="fas fa-globe ms-1"></i>
+          </div>
+          <div class="footer">
+            <p>
+              Copyright Â© 2019 All Rights <br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="navHeader bg-white text-black d-flex flex-column justify-content-between text-center py-4 px-2"
+      >
+        <img class="logo" src="images/logo.png" />
+        <i class="fas fa-bars openCloseIcon fa-2x"></i>
+        <div class="p-3">
+          <i class="fas fa-share-nodes d-block py-2"></i>
+          <i class="fas fa-globe d-block py-2"></i>
+        </div>
+      </div>
+    </div>
+    <!-- side nav -->
+
+    <!-- main section -->
+    <div class="container w-75" id="searchContainer">
+
+    </div>
+      <div class="innerLoadingScreen top-0 bottom-0 end-0 start-0 justify-content-center align-items-center">
+        <i class="fas fa-spinner fa-spin fa-6x"></i>
+      </div>
+    <div class="container">
+      <div class="row py-5 g-4 rowData">
+
+
+      </div>
+    </div>
+    
+    <!-- main section -->
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

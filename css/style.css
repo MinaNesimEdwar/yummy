@@ -1,0 +1,59 @@
+/* general style */
+body{
+    color: #f9f6f6 ;
+    background-color: #0D0D0D;
+    overflow: hidden;
+  }
+  .logo{
+    width: 40px;
+  }
+  i{
+    cursor: pointer;
+  }
+  /* general style */
+  /* loading screen */
+  .loadingScreen{
+  z-index: 999;
+  display: flex;
+  }
+  .innerLoadingScreen{
+    z-index: 9;
+  display: flex;
+  position: absolute;
+  background-color: #0D0D0D;
+  
+  }
+  /* loading screen */
+  
+  /* sideNav */
+  .sideNav{
+    z-index: 99;
+  }
+  .navLinks li{
+    cursor: pointer;
+  }
+  .navTab{
+    background-color: #0D0D0D;
+  }
+  /* sideNav */
+  
+  /* main section */
+  .mealLayer{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.7);
+    top: 100%;
+    transition: all 0.3s;
+  } 
+  .meal{
+    cursor: pointer;
+  }
+  .meal:hover .mealLayer{
+    top:0; 
+  }
+  /* main section */
+  /* meal details */
+  .alert{
+    width: fit-content;
+  }
+  /* meal details */
